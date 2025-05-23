@@ -1,0 +1,20 @@
+{
+  "folders": [
+	{
+		"path": "../../Project2/nestjs-typescript-utility"
+	},
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../Project2/edge-case-lab"
+	},
+	{
+		"path": "../../INFLEARN/lecture/MDU"
+	},
+	{
+		"path": "../../Project2/EXPRESS/TDD/nest-tdd/prisma-typia"
+	}
+],
+  "settings": {}
+}
