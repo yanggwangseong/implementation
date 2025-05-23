@@ -1,2 +1,3 @@
-# implementation
-implementation
+## DB
+
+- Optimistic Lock and Pessimistic Lock
