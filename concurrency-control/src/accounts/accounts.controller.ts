@@ -5,26 +5,33 @@ import { AccountsService } from './accounts.service';
 export class AccountsController {
   constructor(private readonly accountsService: AccountsService) {}
 
-  @Post('transfer')
-  async transfer(
-    @Body()
-    body: {
-      fromAccountNumber: string;
-      toAccountNumber: string;
-      amount: number;
-    },
-  ) {
-    await this.accountsService.transfer(
-      body.fromAccountNumber,
-      body.toAccountNumber,
-      body.amount,
-    );
-    return { message: 'Transfer successful' };
+  @Post('case1')
+  async case1() {
+    await this.accountsService.case1Example();
+    return { message: 'Case 1 executed' };
   }
 
-  @Post('deposit')
-  async deposit(@Body() body: { accountNumber: string; amount: number }) {
-    await this.accountsService.deposit(body.accountNumber, body.amount);
-    return { message: 'Deposit successful' };
+  @Post('case2')
+  async case2() {
+    await this.accountsService.case2Example();
+    return { message: 'Case 2 executed' };
+  }
+
+  @Post('case3')
+  async case3() {
+    await this.accountsService.case3Example();
+    return { message: 'Case 3 executed' };
+  }
+
+  @Post('case4')
+  async case4() {
+    await this.accountsService.case4Example();
+    return { message: 'Case 4 executed' };
+  }
+
+  @Post('case5')
+  async case5() {
+    await this.accountsService.case5Example();
+    return { message: 'Case 5 executed' };
   }
 }
